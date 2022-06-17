@@ -3,11 +3,6 @@
  */
 package com.reavature.calculator;
 
-
-/**
- * @author KevinTranHuu
- *
- */
 public class Calculator {
 	/*
 	 * - add(int a, int b)
