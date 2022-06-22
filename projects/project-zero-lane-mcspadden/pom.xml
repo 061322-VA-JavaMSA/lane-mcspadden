@@ -3,4 +3,11 @@
   <groupId>com.revature</groupId>
   <artifactId>project-zero-lane-mcspadden</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  <dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>42.4.0</version>
+</dependency>
+  </dependencies>
 </project>
