@@ -3,6 +3,7 @@ package com.revature.daos;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -22,6 +23,8 @@ public class OfferPostgres implements OfferDAO {
 			ps.setInt(1, o.getItem_id());
 			ps.setInt(2,o.getUser_id());
 			ps.setInt(3, o.getOffer());
+			
+			ResultSet rs = ps.executeQuery();
 			
 			
 		} catch (SQLException e) {

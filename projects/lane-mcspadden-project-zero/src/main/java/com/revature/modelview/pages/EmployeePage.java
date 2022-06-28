@@ -43,13 +43,13 @@ public class EmployeePage implements Page {
 		switch(c) {
 		case 1:
 			Driver.ClearConsole();
-			viewOffers();
+	//		viewOffers();
 			break;
 		case 2:
 			Driver.ClearConsole();
 			break;
 		case 3:
-			sentToPage("LOGIN", null);
+		//	sentToPage("LOGIN", null);
 			break;
 		default:
 			break;
