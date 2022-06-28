@@ -3,6 +3,7 @@ package com.revature.modelview;
 import com.revature.models.User;
 import com.revature.modelview.pages.CreateAccPage;
 import com.revature.modelview.pages.CustomerPage;
+import com.revature.modelview.pages.EmployeePage;
 import com.revature.modelview.pages.FacePage;
 import com.revature.modelview.pages.LogInPage;
 
@@ -20,6 +21,9 @@ public class ModelViewController {
 			break;
 		case "CUSTOMER":
 			currentPage = new CustomerPage(u);
+			break;
+		case "EMPLOYEE":
+			currentPage = new EmployeePage(u);
 		
 		
 		}

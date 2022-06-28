@@ -6,6 +6,7 @@ import com.revature.Driver;
 import com.revature.daos.UserDAO;
 import com.revature.daos.UserPostgres;
 import com.revature.models.User;
+import com.revature.models.UserRank;
 
 public class LogInPage implements Page{
 
@@ -35,7 +36,20 @@ public class LogInPage implements Page{
 		try {
 			login = Driver.as.login(username, password);
 			login.setId(ud.retrieveUserByUsername(username).getId());
-			sendToPage("CUSTOMER", login);
+			login.setRank(ud.retrieveUserByUsername(username).getRank());
+			switch(login.getRank()) {
+			case CLIENT:
+				sendToPage("CUSTOMER", login);
+				break;
+			case EMPLOYEE:
+				sendToPage("EMPLOYEE", login);
+			case MANAGER:
+				break;
+			default:
+				break;
+
+			}
+			
 		} catch (LoginException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -20,7 +20,15 @@ public class User {
 		this.password = password;
 		this.rank = rank;
 	}
+	
+	public UserRank getRank() {
+		return rank;
+	}
 
+	public void setRank(UserRank u) {
+		this.rank = u;
+	}
+	
 	public int getId() {
 		return id;
 	}

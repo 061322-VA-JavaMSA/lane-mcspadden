@@ -115,6 +115,7 @@ public class UserPostgres implements UserDAO {
 				u.setId(rs.getInt("id"));
 				u.setUsername(rs.getString("username"));
 				u.setPassword(rs.getString("password"));
+				u.setRank((UserRank.valueOf(rs.getString("title"))));
 			}
 			
 		} catch (SQLException e) {

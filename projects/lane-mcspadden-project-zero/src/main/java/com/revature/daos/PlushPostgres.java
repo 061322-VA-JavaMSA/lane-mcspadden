@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.revature.models.AnimePlush;
+import com.revature.modelview.pages.CustomerPage;
 import com.revature.util.ConnectionUtil;
 
 import org.apache.logging.log4j.LogManager;
@@ -144,15 +145,16 @@ public class PlushPostgres implements PlushDAO {
 	@Override
 	public boolean updatePlush(AnimePlush p) {
 		// TODO Auto-generated method stub
-		String sql = "update user_items_owned set balance = ? where item_id = ?";
+		String sql = "update user_items_owned set balance = ? where item_id = ? and user_id = ?";
 		
 		try(Connection c = ConnectionUtil.getConnectionFromFile()) {
 			PreparedStatement ps = c.prepareStatement(sql);
 			
 			ps.setInt(1, p.getPrice());
 			ps.setInt(2, p.getId());
+			ps.setInt(3, CustomerPage.loggedIn.getId());
 			
-			int rs = ps.executeUpdate();
+			ps.executeUpdate();
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

@@ -10,7 +10,7 @@ import com.revature.models.AnimePlush;
 import com.revature.models.User;
 
 public class CustomerPage implements Page {
-	User loggedIn;
+	public static User loggedIn;
 	PlushDAO pd = new PlushPostgres();
 	List<AnimePlush> list = new ArrayList<>();
 	
@@ -90,9 +90,10 @@ public class CustomerPage implements Page {
 			int choice = Driver.scan.nextInt();
 			AnimePlush choice1 = pd.retrievePlushById(choice);
 			System.out.println(
-					"You current balance on " + choice1.getName() + " is " + choice1.getPrice() + "\n" +
+					"Your current balance on " + choice1.getName() + " is " + choice1.getPrice() + "\n" +
 					"How much would you like to pay on it?"
 					);
+			Driver.scan.next();
 			int input = Driver.scan.nextInt();
 			while(input > choice1.getPrice()) {
 				System.out.println(
@@ -140,7 +141,7 @@ public class CustomerPage implements Page {
 	@Override
 	public void sendToPage(String page, User u) {
 		// TODO Auto-generated method stub
-		
+		Driver.mvc.navigate(page, u);
 	}
 
 	@Override
