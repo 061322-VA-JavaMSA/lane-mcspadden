@@ -1,0 +1,20 @@
+table{
+    margin-right: auto;
+    margin-left: auto;
+    background-color: antiquewhite;
+}
+
+td,th {
+    padding: 2em;
+    border: 1px solid black;
+
+    text-align: center;
+}
+
+.truth:hover{
+    background-color: green;
+}
+
+.lie:hover{
+    background-color: red;
+}

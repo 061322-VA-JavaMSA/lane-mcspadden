@@ -3,33 +3,30 @@ package com.revature.modelview.pages;
 import com.revature.Driver;
 import com.revature.models.User;
 
-public class FacePage implements Page{
-
-	public FacePage() {
+public class CustomerPage implements Page {
+	User loggedIn;
+	
+	public CustomerPage(User u) {
+		loggedIn = u;
 		setUpPage();
 	}
 	
 	@Override
 	public void setUpPage() {
 		// TODO Auto-generated method stub
-		System.out.println(
-				"###### FRONT PAGE ######\n" +
-				"Welcome to Lane's Anime Plushie Shop\n\n"
-				);
-		setPageMenu();
+		System.out.println("Welcome " + loggedIn.getUsername() + " to the store!");
+		System.out.println("Please select an option to continue!");
 	}
 
 	@Override
 	public void setPageMenu() {
 		// TODO Auto-generated method stub
-		Driver.ClearConsole();
 		System.out.println(
-				"Please select a choice from below:\n" +
-				"1. Log In\n" +
-				"2. Create a new account\n" +
-				"3. Close application\n"
+				"1. View Items in Shop" +
+				"2. View Your Items" +
+				"3. Logout"		
 				);
-		retrieveValidMenuChoice();
+		
 	}
 
 	@Override
@@ -46,10 +43,10 @@ public class FacePage implements Page{
 		switch(c) {
 		case 1:
 			Driver.ClearConsole();
-			sendToPage("LOGIN", null);
+			viewOwnedItems(loggedIn);
 			break;
 		case 2:
-			sendToPage("CREATEACC", null);
+			Driver.ClearConsole();
 			break;
 		case 3:
 			System.exit(0);
@@ -59,12 +56,16 @@ public class FacePage implements Page{
 		}
 	}
 
-	
-	
+	private void viewOwnedItems(User loggedIn2) {
+		// TODO Auto-generated method stub
+		
+		
+	}
+
 	@Override
 	public void sendToPage(String page, User u) {
 		// TODO Auto-generated method stub
-		Driver.mvc.navigate(page, u);
+		
 	}
 
 	@Override

@@ -12,6 +12,7 @@ public class AnimePlush {
 	private int id;
 	private String name;
 	private String description;
+	private int price;
 	private AnimePlushStatus status;
 	
 	
@@ -113,6 +114,24 @@ public class AnimePlush {
 	@Override
 	public String toString() {
 		return "AnimePlush [id=" + id + ", name=" + name + ", description=" + description + ", status=" + status + "]";
+	}
+
+
+	public int getPrice() {
+		// TODO Auto-generated method stub
+		return price;
+	}
+
+
+	public void setPrice(int price) {
+		// TODO Auto-generated method stub
+		this.price = price;
+	}
+
+
+	public void setStatus(String string) {
+		// TODO Auto-generated method stub
+		this.status = AnimePlushStatus.valueOf(string);
 	}
 	
 	
