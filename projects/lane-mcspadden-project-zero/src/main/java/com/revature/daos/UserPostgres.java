@@ -112,7 +112,7 @@ public class UserPostgres implements UserDAO {
 			
 			while(rs.next()) {
 				u = new User();
-//				u.setId(rs.getInt("id"));
+				u.setId(rs.getInt("id"));
 				u.setUsername(rs.getString("username"));
 				u.setPassword(rs.getString("password"));
 			}

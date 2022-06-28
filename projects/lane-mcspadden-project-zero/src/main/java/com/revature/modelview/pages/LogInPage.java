@@ -3,12 +3,14 @@ package com.revature.modelview.pages;
 import javax.security.auth.login.LoginException;
 
 import com.revature.Driver;
+import com.revature.daos.UserDAO;
+import com.revature.daos.UserPostgres;
 import com.revature.models.User;
 
 public class LogInPage implements Page{
 
 	User login = new User();
-	
+	UserDAO ud = new UserPostgres();
 	public LogInPage() {
 		setUpPage();
 	}
@@ -32,6 +34,7 @@ public class LogInPage implements Page{
 		if(login.getUsername() == null) {
 		try {
 			login = Driver.as.login(username, password);
+			login.setId(ud.retrieveUserByUsername(username).getId());
 			sendToPage("CUSTOMER", login);
 		} catch (LoginException e) {
 			// TODO Auto-generated catch block
