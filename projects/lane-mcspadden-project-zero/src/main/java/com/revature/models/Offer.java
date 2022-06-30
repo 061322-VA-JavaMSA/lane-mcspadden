@@ -3,24 +3,34 @@ package com.revature.models;
 import java.util.Objects;
 
 public class Offer {
+	
+	int offer_id;
 	int item_id;
 	int user_id;
-	String item_name;
 	int offer;
-	
-	Offer() {
-		
+	OfferStatus status;
+
+	public OfferStatus getStatus() {
+		return status;
+	}
+
+	public void setStatus(OfferStatus status) {
+		this.status = status;
+	}
+
+	public Offer() {
+
 	}
 
 	@Override
 	public String toString() {
-		return "Offer [item_id=" + item_id + ", user_id=" + user_id + ", item_name=" + item_name + ", offer=" + offer
+		return "Offer [item_id=" + item_id + ", user_id=" + user_id + ", item_name=" + ", offer=" + offer
 				+ "]";
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(item_id, item_name, offer, user_id);
+		return Objects.hash(item_id, offer, user_id);
 	}
 
 	@Override
@@ -32,8 +42,16 @@ public class Offer {
 		if (getClass() != obj.getClass())
 			return false;
 		Offer other = (Offer) obj;
-		return item_id == other.item_id && Objects.equals(item_name, other.item_name) && offer == other.offer
+		return item_id == other.item_id && offer == other.offer
 				&& user_id == other.user_id;
+	}
+	
+	public int getOffer_id() {
+		return offer_id;
+	}
+
+	public void setOffer_id(int offer_id) {
+		this.offer_id = offer_id;
 	}
 
 	public int getItem_id() {
@@ -50,14 +68,6 @@ public class Offer {
 
 	public void setUser_id(int user_id) {
 		this.user_id = user_id;
-	}
-
-	public String getItem_name() {
-		return item_name;
-	}
-
-	public void setItem_name(String item_name) {
-		this.item_name = item_name;
 	}
 
 	public int getOffer() {

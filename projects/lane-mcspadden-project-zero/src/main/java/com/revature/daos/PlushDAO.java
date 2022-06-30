@@ -10,4 +10,5 @@ public interface PlushDAO {
 	AnimePlush retrievePlushById(int id);
 	List<AnimePlush> retrievePlushByUserId(int id);
 	boolean updatePlush(AnimePlush p);
+	boolean removePlush(int id);
 }

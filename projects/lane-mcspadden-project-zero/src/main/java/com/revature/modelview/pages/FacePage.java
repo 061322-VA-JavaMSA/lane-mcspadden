@@ -1,10 +1,16 @@
 package com.revature.modelview.pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.revature.Driver;
 import com.revature.models.User;
 
 public class FacePage implements Page{
 
+	private static Logger log = LogManager.getLogger(Driver.class);
+
+	
 	public FacePage() {
 		setUpPage();
 	}

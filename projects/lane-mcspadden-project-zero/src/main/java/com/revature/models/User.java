@@ -7,7 +7,6 @@ public class User {
 	private UserRank rank;
 	
 	
-	
 	public User() {
 //		this.id = null;
 		this.username = null;

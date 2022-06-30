@@ -1,0 +1,13 @@
+07:13:10 [main] INFO  com.revature.Driver - User Login: User [id=1, username=LaneM123, password=Pass1]
+07:13:19 [main] INFO  com.revature.Driver - com.revature.models.Transaction@475ef74
+07:21:35 [main] INFO  com.revature.Driver - User Login: User [id=3, username=JaneR123, password=Pass1]
+07:27:15 [com.revature.Driver.main()] INFO  com.revature.Driver - User Login: User [id=1, username=LaneM123, password=Pass1]
+07:27:22 [com.revature.Driver.main()] INFO  com.revature.Driver - User Login: User [id=3, username=JaneR123, password=Pass1]
+07:27:54 [com.revature.Driver.main()] INFO  com.revature.Driver - Plush Created: AnimePlush [id=6, name=Jerry, description=Phineus, status=AVAILABLE]
+07:28:09 [com.revature.Driver.main()] INFO  com.revature.Driver - Offer Created: Offer [item_id=6, user_id=1, item_name=, offer=3000]
+07:28:09 [com.revature.Driver.main()] INFO  com.revature.Driver - Plush Updated : AnimePlush [id=6, name=Jerry, description=Phineus, status=AVAILABLE]
+07:28:22 [com.revature.Driver.main()] INFO  com.revature.Driver - Accpted offer: Offer [item_id=6, user_id=1, item_name=, offer=3000]
+07:28:56 [com.revature.Driver.main()] INFO  com.revature.Driver - com.revature.models.Transaction@38c1336d
+07:32:51 [main] INFO  com.revature.Driver - User Login: User [id=1, username=LaneM123, password=Pass1]
+07:34:00 [com.revature.Driver.main()] INFO  com.revature.Driver - User Login: User [id=1, username=LaneM123, password=Pass1]
+07:35:00 [main] INFO  com.revature.Driver - User Login: User [id=1, username=LaneM123, password=Pass1]

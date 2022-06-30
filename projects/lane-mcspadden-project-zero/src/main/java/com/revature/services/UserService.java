@@ -27,14 +27,9 @@ public class UserService {
 			return user;
 		} else {
 			System.out.println(u.getUsername() + " has already been registered");
+			Driver.mvc.navigate("HOME", null);
 			return null;
 		}
-		
-		
-		// if ok
-//		u = ud.createUser(u);
-
-
 	}
 	
 	private boolean checkIfUsernameUsed(User u) {

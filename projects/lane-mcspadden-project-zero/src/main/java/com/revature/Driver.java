@@ -36,7 +36,6 @@ public class Driver {
 		us = new UserService();
 		ps = new PlushService();
 		mvc = new ModelViewController();
-		
 		FacePage start = new FacePage();
 	}
 	
@@ -55,6 +54,7 @@ public class Driver {
                 startProcess.waitFor();
             } 
         }catch(Exception e){
+        	log.error(e);
             System.out.println(e);
         }
     }

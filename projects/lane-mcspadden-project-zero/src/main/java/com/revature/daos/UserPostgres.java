@@ -103,7 +103,7 @@ public class UserPostgres implements UserDAO {
 		String sql = "select * from users where username  = ?;";
 		User u = null;
 		
-		try (Connection c = ConnectionUtil.getConnectionFromFile();){
+		try (Connection c = ConnectionUtil.getConnectionFromFile()){
 			PreparedStatement ps = c.prepareStatement(sql);
 			
 			ps.setString(1, username); // this refers to the 1st "?" in the sql string, allows to inject data
