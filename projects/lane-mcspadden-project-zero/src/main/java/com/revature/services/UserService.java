@@ -26,7 +26,8 @@ public class UserService {
 			log.info("User: " + user + " was created.");
 			return user;
 		} else {
-			System.out.println(u.getUsername() + " has already been registered");
+			System.out.println(u.getUsername() + " has already been registered\nPress enter to continue");
+			String dummy = Driver.scan.nextLine();
 			Driver.mvc.navigate("HOME", null);
 			return null;
 		}

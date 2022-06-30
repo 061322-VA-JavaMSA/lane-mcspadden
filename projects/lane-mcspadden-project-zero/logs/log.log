@@ -12,3 +12,5 @@
 07:34:00 [com.revature.Driver.main()] INFO  com.revature.Driver - User Login: User [id=1, username=LaneM123, password=Pass1]
 07:35:00 [main] INFO  com.revature.Driver - User Login: User [id=1, username=LaneM123, password=Pass1]
 07:46:42 [main] INFO  com.revature.Driver - User Login: User [id=3, username=JaneR123, password=Pass1]
+08:52:54 [main] INFO  com.revature.Driver - User Login: User [id=1, username=LaneM123, password=Pass1]
+08:53:22 [main] INFO  com.revature.Driver - User Login: User [id=1, username=LaneM123, password=Pass1]
