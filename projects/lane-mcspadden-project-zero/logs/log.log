@@ -14,3 +14,21 @@
 07:46:42 [main] INFO  com.revature.Driver - User Login: User [id=3, username=JaneR123, password=Pass1]
 08:52:54 [main] INFO  com.revature.Driver - User Login: User [id=1, username=LaneM123, password=Pass1]
 08:53:22 [main] INFO  com.revature.Driver - User Login: User [id=1, username=LaneM123, password=Pass1]
+09:29:56 [com.revature.Driver.main()] ERROR com.revature.Driver - javax.security.auth.login.LoginException
+09:59:52 [com.revature.Driver.main()] INFO  com.revature.Driver - User Login: User [id=3, username=JaneR123, password=Pass1]
+10:00:11 [com.revature.Driver.main()] INFO  com.revature.Driver - User Login: User [id=1, username=LaneM123, password=Pass1]
+10:00:38 [com.revature.Driver.main()] INFO  com.revature.services.UserService - User: User [id=4, username=LaneM321, password=Pass1] was created.
+10:01:06 [com.revature.Driver.main()] INFO  com.revature.Driver - Offer Created: Offer [item_id=1, user_id=1, item_name=, offer=250]
+10:01:06 [com.revature.Driver.main()] INFO  com.revature.Driver - Plush Updated : AnimePlush [id=1, name=Pikachu, description=Pokemon, status=AVAILABLE]
+10:01:28 [com.revature.Driver.main()] INFO  com.revature.Driver - Accpted offer: Offer [item_id=1, user_id=1, item_name=, offer=250]
+10:02:06 [com.revature.Driver.main()] INFO  com.revature.Driver - com.revature.models.Transaction@475ef74
+10:02:30 [com.revature.Driver.main()] INFO  com.revature.Driver - User Login: User [id=4, username=LaneM321, password=Pass1]
+10:02:45 [com.revature.Driver.main()] INFO  com.revature.Driver - Plush Created: AnimePlush [id=4, name=Goku, description=Pokemon, status=AVAILABLE]
+10:03:08 [com.revature.Driver.main()] INFO  com.revature.Driver - JaneR123 Removed Plush: AnimePlush [id=4, name=Goku, description=Pokemon, status=AVAILABLE]
+10:03:30 [com.revature.Driver.main()] INFO  com.revature.Driver - Plush Created: AnimePlush [id=5, name=Ash, description=Pokemon, status=AVAILABLE]
+10:03:42 [com.revature.Driver.main()] INFO  com.revature.Driver - Offer Created: Offer [item_id=5, user_id=4, item_name=, offer=200000]
+10:03:42 [com.revature.Driver.main()] INFO  com.revature.Driver - Plush Updated : AnimePlush [id=5, name=Ash, description=Pokemon, status=AVAILABLE]
+10:03:54 [com.revature.Driver.main()] INFO  com.revature.Driver - Offer Created: Offer [item_id=5, user_id=1, item_name=, offer=500000]
+10:03:54 [com.revature.Driver.main()] INFO  com.revature.Driver - Plush Updated : AnimePlush [id=5, name=Ash, description=Pokemon, status=AVAILABLE]
+10:04:07 [com.revature.Driver.main()] INFO  com.revature.Driver - Accpted offer: Offer [item_id=5, user_id=1, item_name=, offer=500000]
+10:05:00 [main] INFO  com.revature.services.UserService - User: User [id=5, username=TestR123, password=Pass1] was created.

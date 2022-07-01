@@ -1,0 +1,48 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #888888;
+    background-image: url('https://cdn.pixabay.com/photo/2016/07/23/13/18/pokemon-1536849__480.png');
+}
+
+main {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+button {
+    color: white;
+    background-color: #8777ff;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #EEAA66;
+}
+
+button:active {
+    border: 2px solid #888888;
+}
+
+main>* {
+    margin: 8px;
+}
+
+th {
+    color: #555555;
+}
+
+th, td {
+    border-bottom: 2px solid orange;
+    border-right: 2px solid orange;
+}
+
+h1 {
+    color:rgb(249, 249, 249);
+}
+
+section {
+    background-image: "https://res.cloudinary.com/practicaldev/image/fetch/s--ZMO64M3U--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/3tm71ghf3ih3se5rtz0a.png";
+}
