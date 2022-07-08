@@ -1,11 +1,15 @@
 let apiUrl = 'http://127.0.0.1:8080/project-one';
 
-
 let loginButton = document.getElementById('submitButton');
 loginButton.addEventListener('click', login);
 
+if(sessionStorage.getItem('principal')) {
+    window.location.href="./home.html";
+};
+
 async function login(){
-    
+    console.log("Ran login");
+    let incorrectSplash = document.getElementById('incorrect');
     let username = document.getElementById('username').value;
     let password = document.getElementById('password').value;
 
@@ -13,7 +17,7 @@ async function login(){
         method: 'POST',
         credentials: 'include',
         headers: {
-            'Content-Type': 'application/x-ww-form-urlencoded'
+            'Content-Type': 'application/x-www-form-urlencoded'
         },
 
         body: new URLSearchParams({
@@ -27,7 +31,9 @@ async function login(){
 
         sessionStorage.setItem('principal', JSON.stringify(data));
 
-        window.location.href="google.com"
+        window.location.href="./home.html";
+    } else {
+        incorrectSplash.style.visibility = "visible";
     }
 
 

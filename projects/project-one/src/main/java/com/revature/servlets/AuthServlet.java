@@ -28,7 +28,6 @@ public class AuthServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException  {
 		CorsFix.addCorsHeader(req.getRequestURI(), res);
 		
-		
 		String username = req.getParameter("username");
 		String password = req.getParameter("password");
 
