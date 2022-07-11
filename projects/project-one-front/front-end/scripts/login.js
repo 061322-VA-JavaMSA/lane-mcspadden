@@ -3,9 +3,9 @@ let apiUrl = 'http://127.0.0.1:8080/project-one';
 let loginButton = document.getElementById('submitButton');
 loginButton.addEventListener('click', login);
 
-if(sessionStorage.getItem('principal')) {
-    window.location.href="./home.html";
-};
+// if(sessionStorage.getItem('principal')) {
+//     window.location.href="./home.html";
+// };
 
 async function login(){
     console.log("Ran login");
@@ -36,5 +36,5 @@ async function login(){
         incorrectSplash.style.visibility = "visible";
     }
 
-
+    console.log('end of login');
 }

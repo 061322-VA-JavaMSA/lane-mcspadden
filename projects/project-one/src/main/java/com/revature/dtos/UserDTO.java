@@ -9,6 +9,8 @@ public class UserDTO {
 
 	private int id;
 	private String username;
+	private String fname;
+	private String lname;
 	private UserTitle title;
 	
 	public UserDTO() {
@@ -17,12 +19,30 @@ public class UserDTO {
 	
 	public UserDTO(User u) {
 		id = u.getId();
+		lname = u.getLastName();
+		fname = u.getFirstName();
 		username = u.getUsername();
 		title = u.getUserTitle();
 	}
 
 	//Getters and Setters
 	
+	public String getFname() {
+		return fname;
+	}
+
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+
+	public String getLname() {
+		return lname;
+	}
+
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -51,15 +71,18 @@ public class UserDTO {
 
 	@Override
 	public String toString() {
-		return "UserDTO [id=" + id + ", username=" + username + ", title=" + title + "]";
+		return "UserDTO [id=" + id + ", username=" + username + ", fname=" + fname + ", lname=" + lname + ", title="
+				+ title + "]";
 	}
-
+	
 	//HashCode and .Equals
 	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id, title, username);
 	}
+
+
 
 	@Override
 	public boolean equals(Object obj) {
