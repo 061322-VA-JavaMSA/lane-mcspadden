@@ -13,8 +13,36 @@
   <body>
     <div style="text-align: center;">
       <h1 id="welcome"></h1>
-      <button value="showRequests" id="submitButton"></button>
 
+      <table id="pending" class="table" style="display: none;">
+        <thead>
+          <tr>
+          <th scope="col">Request ID</th>
+          <th scope="col">Employee Name</th>
+          <th scope="col">Request Date</th>
+          <th scope="col">Request Ammount</th>
+          <th scope="col">Request Description</th>
+          <th scope="col">Request Type</th>
+        </tr>
+        </thead>
+        <tbody>
+
+
+        </tbody>
+        
+
+      </table>
+      <div style="display: none;" id="submissionForm">
+          <h1>Please your reimbursement information below</h1>
+          <div>Ammount:   <input type="text" id="ammount"></div>
+          <p></p>
+          <div>Description:   <input type="text" id="desc"></div>
+          <p></p>
+          <div>Type:   <input type="text" id="type"></div>
+          <p></p>
+          <div>Receipt:   <input type="file" id="ammount"></div>
+      </div>
+      <button value="showRequests" id="submitButton"></button>
 
 
 

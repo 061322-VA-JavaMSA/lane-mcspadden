@@ -33,7 +33,6 @@ public class AuthServlet extends HttpServlet {
 
 		try {
 			User principal = as.login(username, password);
-			System.out.println(principal.getFirstName());
 			
 			HttpSession session = req.getSession();
 			session.setAttribute("userId", principal.getId());

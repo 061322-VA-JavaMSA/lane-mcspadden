@@ -23,7 +23,24 @@ public class UserHibernate implements UserDAO {
 	@Override
 	public User retrieveUserById(int id) {
 		// TODO Auto-generated method stub
-		return null;
+		User user = null;
+		
+		try(Session s = HibernateUtil.getSessionFactory().openSession();){
+			// SELECT * FROM USERS WHERE USERNAME = '';
+			
+			CriteriaBuilder cb = s.getCriteriaBuilder();
+			CriteriaQuery<User> cq = cb.createQuery(User.class);
+			
+			Root<User> root = cq.from(User.class);
+			
+			Predicate predicateForUsername = cb.equal(root.get("id"), id);			
+			cq.select(root).where(predicateForUsername);
+			
+
+			user = (User) s.createQuery(cq).getSingleResult();
+		}
+		
+		return user;
 	}
 
 	@Override

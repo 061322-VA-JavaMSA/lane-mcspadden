@@ -26,4 +26,24 @@
     <servlet-name>tix</servlet-name>
     <url-pattern>/tix</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>create</display-name>
+    <servlet-name>create</servlet-name>
+    <servlet-class>com.revature.servlets.CreateTixServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>create</servlet-name>
+    <url-pattern>/create</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TixStatusServlet</display-name>
+    <servlet-name>TixStatusServlet</servlet-name>
+    <servlet-class>com.revature.servlets.TixStatusServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TixStatusServlet</servlet-name>
+    <url-pattern>/TixStatusServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
