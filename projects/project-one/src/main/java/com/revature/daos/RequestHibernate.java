@@ -163,7 +163,6 @@ public class RequestHibernate implements RequestDAO {
 			s.update(r2);
 			System.out.println("Chilling in update");
 			
-			
 			tx.commit();
 			log.info("REQUEST UPDATED from " + r.toString() + " to " + r2.toString());
 		}

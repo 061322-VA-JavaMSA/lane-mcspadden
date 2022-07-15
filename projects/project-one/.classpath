@@ -41,5 +41,6 @@
 			<attribute name="javadoc_location" value="https://tomcat.apache.org/tomcat-8.5-doc/api/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,0 +1,128 @@
+06:30:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+06:30:15 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+06:30:15 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06:30:15 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06:30:15 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://ldm-project-zero.ctxmz3xkpwkl.us-east-2.rds.amazonaws.com:5432/postgres]
+06:30:15 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=postgres, password=Sugar3545!}
+06:30:15 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+06:30:15 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+06:30:17 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+06:30:18 [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@75de29c0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+06:30:18 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06:30:18 [main] ERROR com.revature.services.AuthService - User [id=51, username=LaneM123, password=Pass1, firstName=Lane, lastName=McSpadden, userTitle=EMPLOYEE]logged in
+06:31:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+06:31:48 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+06:31:49 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06:31:49 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06:31:49 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://ldm-project-zero.ctxmz3xkpwkl.us-east-2.rds.amazonaws.com:5432/postgres]
+06:31:49 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=postgres, password=Sugar3545!}
+06:31:49 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+06:31:49 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+06:31:51 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+06:31:52 [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@75de29c0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+06:31:52 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06:31:53 [main] ERROR com.revature.services.AuthService - User [id=51, username=LaneM123, password=Pass1, firstName=Lane, lastName=McSpadden, userTitle=EMPLOYEE]logged in
+06:31:57 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+06:31:58 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+06:31:58 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06:31:58 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06:31:58 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://ldm-project-zero.ctxmz3xkpwkl.us-east-2.rds.amazonaws.com:5432/postgres]
+06:31:58 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=postgres, password=Sugar3545!}
+06:31:58 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+06:31:58 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+06:32:00 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+06:32:01 [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@75de29c0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+06:32:01 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06:32:02 [main] ERROR com.revature.services.AuthService - User [id=51, username=LaneM123, password=Pass1, firstName=Lane, lastName=McSpadden, userTitle=EMPLOYEE]logged in
+06:37:50 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+06:37:50 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+06:37:50 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06:37:51 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06:37:51 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://ldm-project-zero.ctxmz3xkpwkl.us-east-2.rds.amazonaws.com:5432/postgres]
+06:37:51 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=postgres, password=Sugar3545!}
+06:37:51 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+06:37:51 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+06:37:52 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+06:37:53 [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@fc807c1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+06:37:53 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06:37:54 [main] ERROR com.revature.services.AuthService - User [id=51, username=LaneM123, password=Pass1, firstName=Lane, lastName=McSpadden, userTitle=EMPLOYEE]logged in
+06:41:22 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+06:41:22 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+06:41:22 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06:41:23 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06:41:23 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://ldm-project-zero.ctxmz3xkpwkl.us-east-2.rds.amazonaws.com:5432/postgres]
+06:41:23 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=postgres, password=Sugar3545!}
+06:41:23 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+06:41:23 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+06:41:24 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+06:41:25 [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@fc807c1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+06:41:25 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06:41:25 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23502
+06:41:25 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - ERROR: null value in column "date_sub" violates not-null constraint
+  Detail: Failing row contains (52, 200, null, null, null, null, PENDING, null, null).
+06:41:25 [main] ERROR com.revature.daos.RequestHibernate - org.hibernate.exception.ConstraintViolationException: could not execute statement
+06:41:26 [main] ERROR com.revature.services.AuthService - User [id=51, username=LaneM123, password=Pass1, firstName=Lane, lastName=McSpadden, userTitle=EMPLOYEE]logged in
+06:43:39 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+06:43:39 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+06:43:39 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06:43:40 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06:43:40 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://ldm-project-zero.ctxmz3xkpwkl.us-east-2.rds.amazonaws.com:5432/postgres]
+06:43:40 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=postgres, password=Sugar3545!}
+06:43:40 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+06:43:40 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+06:43:42 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+06:43:43 [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@296e281a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+06:43:43 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06:43:43 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23502
+06:43:43 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - ERROR: null value in column "date_sub" violates not-null constraint
+  Detail: Failing row contains (53, 200, null, null, null, null, PENDING, null, null).
+06:43:43 [main] ERROR com.revature.daos.RequestHibernate - org.hibernate.exception.ConstraintViolationException: could not execute statement
+06:43:44 [main] ERROR com.revature.services.AuthService - User [id=51, username=LaneM123, password=Pass1, firstName=Lane, lastName=McSpadden, userTitle=EMPLOYEE]logged in
+06:48:29 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+06:48:30 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+06:48:30 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06:48:31 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06:48:31 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://ldm-project-zero.ctxmz3xkpwkl.us-east-2.rds.amazonaws.com:5432/postgres]
+06:48:31 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=postgres, password=Sugar3545!}
+06:48:31 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+06:48:31 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+06:48:32 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+06:48:34 [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@59cda16e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+06:48:34 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06:48:34 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23502
+06:48:34 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - ERROR: null value in column "date_sub" violates not-null constraint
+  Detail: Failing row contains (54, 200, null, null, null, null, PENDING, null, null).
+06:48:34 [main] ERROR com.revature.daos.RequestHibernate - org.hibernate.exception.ConstraintViolationException: could not execute statement
+06:48:35 [main] ERROR com.revature.services.AuthService - User [id=51, username=LaneM123, password=Pass1, firstName=Lane, lastName=McSpadden, userTitle=EMPLOYEE]logged in
+06:49:11 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+06:49:11 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+06:49:12 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06:49:12 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06:49:12 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://ldm-project-zero.ctxmz3xkpwkl.us-east-2.rds.amazonaws.com:5432/postgres]
+06:49:12 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=postgres, password=Sugar3545!}
+06:49:12 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+06:49:12 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+06:49:13 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+06:49:14 [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@59cda16e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+06:49:15 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06:49:15 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23502
+06:49:15 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - ERROR: null value in column "date_sub" violates not-null constraint
+  Detail: Failing row contains (55, 200, null, null, null, null, PENDING, null, null).
+06:49:15 [main] ERROR com.revature.daos.RequestHibernate - org.hibernate.exception.ConstraintViolationException: could not execute statement
+06:49:16 [main] ERROR com.revature.services.AuthService - User [id=51, username=LaneM123, password=Pass1, firstName=Lane, lastName=McSpadden, userTitle=EMPLOYEE]logged in
+06:50:01 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+06:50:01 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+06:50:01 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06:50:01 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06:50:01 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://ldm-project-zero.ctxmz3xkpwkl.us-east-2.rds.amazonaws.com:5432/postgres]
+06:50:01 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=postgres, password=Sugar3545!}
+06:50:01 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+06:50:01 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+06:50:03 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+06:50:04 [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@59cda16e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+06:50:04 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06:50:05 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23502
+06:50:05 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - ERROR: null value in column "date_sub" violates not-null constraint
+  Detail: Failing row contains (56, 200, null, null, null, null, PENDING, null, null).
+06:50:05 [main] ERROR com.revature.daos.RequestHibernate - org.hibernate.exception.ConstraintViolationException: could not execute statement
+06:50:05 [main] ERROR com.revature.services.AuthService - User [id=51, username=LaneM123, password=Pass1, firstName=Lane, lastName=McSpadden, userTitle=EMPLOYEE]logged in
