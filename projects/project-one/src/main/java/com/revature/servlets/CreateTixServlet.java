@@ -38,29 +38,34 @@ public class CreateTixServlet extends HttpServlet {
 		Request r = new Request();
 		
 		int ammount = Integer.parseInt(req.getParameter("ammount"));
-		System.out.println(ammount);
 		String desc = req.getParameter("desc");
 		int author = Integer.parseInt(req.getParameter("author"));
-	//	RequestType type = RequestType.valueOf(req.getParameter("type"));
-		System.out.println(author);
-		java.util.Date newD = new java.util.Date();
-		Date sqlDate = new Date(newD.getTime());
-		r.setDateSubmitted(sqlDate);
+		RequestType type = RequestType.valueOf(req.getParameter("type"));
+		String email = req.getParameter("email");
+		Date date = new Date();
+
+
+
+
 		r.setAmmount(ammount);
 		r.setDesc(desc);
 		r.setAuthor(ud.retrieveUserById(author));
+		r.setType(type);
+		r.setDateSubmitted(date);
 		System.out.println(r.getAuthor().getId());
-		r.setType(RequestType.LODGING);
 		
 		
 		try {
 			ts.createRequest(r);
+			res.setStatus(200);
 		} catch (CouldNotCreateRequestException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		es.sendEmailConfirm(r);
+		if(email.equals("YES")) {
+			es.sendEmailConfirm(r);
+		} 
 
 	}
 

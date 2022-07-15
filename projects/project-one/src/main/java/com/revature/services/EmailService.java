@@ -73,7 +73,7 @@ public class EmailService {
 			msg.setFrom(new InternetAddress("no-reply.revature@gmail.com"));
 			msg.setRecipients(
 					  Message.RecipientType.TO, InternetAddress.parse(r.getAuthor().getEmail()));
-			msg.setSubject("Request " + r.getRequestId() + " submitted");
+			msg.setSubject("Request " + r.getRequestId() + " " + r.getStatus());
 			
 			
 			MimeBodyPart mimeBodyPart = new MimeBodyPart();	
@@ -81,7 +81,7 @@ public class EmailService {
 			
 			String body = 
 					 "<h1 style=\"color:red\">Revature Reimbursement</h1>"
-					+ "<h3>Request Submitted</h3>"
+					+ "<h3>Request was " + r.getStatus() + "</h3>"
 					+ "<p>Username: " + r.getAuthor().getUsername() + "</p>"
 					+ "<p>Ammount: " + r.getAmmount()+ "</p>"
 					+ "<p>Type: " + r.getType() + "</p>"

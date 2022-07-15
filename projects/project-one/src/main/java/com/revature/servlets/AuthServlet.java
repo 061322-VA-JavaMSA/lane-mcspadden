@@ -30,6 +30,8 @@ public class AuthServlet extends HttpServlet {
 		
 		String username = req.getParameter("username");
 		String password = req.getParameter("password");
+		
+		System.out.println(username + " " + password);
 
 		try {
 			User principal = as.login(username, password);
@@ -43,7 +45,9 @@ public class AuthServlet extends HttpServlet {
 			
 			UserDTO principalDTO = new UserDTO(principal);
 			try(PrintWriter pw = res.getWriter()){
+				System.out.println(om.writeValueAsString(principalDTO));
 				pw.write(om.writeValueAsString(principalDTO));
+				
 				res.setStatus(200);
 			}
 		} catch (UserNotFoundException | LoginException e) {

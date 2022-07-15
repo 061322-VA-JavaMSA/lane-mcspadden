@@ -35,8 +35,6 @@ public class Request {
 	private Date dateResolved;
 	@Column(name = "reqdesc")
 	private String desc;
-	@Column(name = "receipt")
-	private String receipt;
 	@ManyToOne
 	@JoinColumn(name = "author_id")
 	private User author;
@@ -46,11 +44,19 @@ public class Request {
 	@Enumerated(EnumType.STRING)
 	@Column(name = "type")
 	private RequestType type;
+	@ManyToOne
+	@JoinColumn(name = "case_manager")
+	private User caseManager;
 
 	// Getters and Setters
 
-	public void setReceipt(String receipt) {
-		this.receipt = receipt;
+
+	public User getCaseManager() {
+		return caseManager;
+	}
+
+	public void setCaseManager(User caseManager) {
+		this.caseManager = caseManager;
 	}
 
 	public int getRequestId() {
@@ -122,7 +128,7 @@ public class Request {
 	@Override
 	public String toString() {
 		return "Request [requestId=" + requestId + ", ammount=" + ammount + ", dateSubmitted=" + dateSubmitted
-				+ ", dateResolved=" + dateResolved + ", desc=" + desc + ", receipt=" + receipt + ", author=" + author
+				+ ", dateResolved=" + dateResolved + ", desc=" + desc + ", author=" + author
 				+ ", status=" + status + ", type=" + type + "]";
 	}
 

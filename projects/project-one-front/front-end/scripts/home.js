@@ -2,6 +2,8 @@ let apiUrl = 'http://127.0.0.1:8080/project-one';
 let user = sessionStorage.getItem('principal');
 let menuTitle = document.getElementById('title');
 let welcome = document.getElementById('welcome');
+let accden = document.getElementById('acceptordeny');
+accden.addEventListener('click', changeButtonValue);
 principal = JSON.parse(user);
 console.log(principal)
 menuTitle.innerHTML = `${principal.title} Home`;
@@ -54,13 +56,28 @@ console.log('hello')
     let data = await response.json();
 }
 
+function changeButtonValue() {
+    if(document.getElementById('acceptordeny').value === 'false') {
+        document.getElementById('acceptordeny').value = 'true'
+    } else {
+        document.getElementById('acceptordeny').value = 'false'
+    }
+    ;
+}
+
 async function  generateNewTix() {
+    document.getElementById('acceptordeny').value = false;
+
+
     let response = await fetch(`${apiUrl}/tix`, {
         method: 'POST',
         credentials: 'include',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         },
+        body: {
+
+        }
     });
     let table2 = document.getElementById('pending')
     table2.setAttribute('style', 'display: true;')
@@ -68,8 +85,15 @@ async function  generateNewTix() {
     let data = await response.json();
     let table = document.getElementById('pending').getElementsByTagName('tbody')[0];
 
+    while(table.hasChildNodes())
+    {
+        table.removeChild(table.firstChild);
+    }
+
+
     let counter = 0;
     for(each in data) {
+        console.log(counter)
         var row = table.insertRow(counter);
         var cell01 = row.insertCell(0);
         cell01.innerHTML = `${data[counter].requestId}`
@@ -88,5 +112,30 @@ async function  generateNewTix() {
     }
 
     console.log(data);
+}
+
+async function updateTix() {
+    let choice = document.getElementById('choice').value;
+    let value = document.getElementById('acceptordeny').value;
+    let status = null
+    if(value === 'false') {
+        status = 'DENIED'
+    } 
+    if(value === 'true') {
+        status = 'ACCEPTED'
+    }
+    console.log(status);
+
+    let response = await fetch(`${apiUrl}/status`, {
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams({
+            'reqID': `${choice}`,
+            'newStatus': `${status}`,
+        })
+    });
 }
 

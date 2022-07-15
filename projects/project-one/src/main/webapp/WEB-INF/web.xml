@@ -2,12 +2,12 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://JAVA.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
   <display-name>project-one</display-name>
   <servlet>
-    <servlet-name>test</servlet-name>
-    <servlet-class>com.revature.servlets.TestServlet2</servlet-class>
+    <servlet-name>users</servlet-name>
+    <servlet-class>com.revature.servlets.UserServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>test</servlet-name>
-    <url-pattern>/test</url-pattern>
+    <servlet-name>users</servlet-name>
+    <url-pattern>/users</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>auth</servlet-name>
@@ -38,12 +38,22 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>TixStatusServlet</display-name>
-    <servlet-name>TixStatusServlet</servlet-name>
+    <display-name>status</display-name>
+    <servlet-name>status</servlet-name>
     <servlet-class>com.revature.servlets.TixStatusServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>TixStatusServlet</servlet-name>
-    <url-pattern>/TixStatusServlet</url-pattern>
+    <servlet-name>status</servlet-name>
+    <url-pattern>/status</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UserUpdateServlet</display-name>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <servlet-class>com.revature.servlets.UserUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <url-pattern>/UserUpdateServlet</url-pattern>
   </servlet-mapping>
 </web-app>
