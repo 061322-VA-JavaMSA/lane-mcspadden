@@ -18,11 +18,11 @@ import org.hibernate.exception.ConstraintViolationException;
 import com.revature.models.Request;
 import com.revature.models.RequestStatus;
 import com.revature.models.User;
-import com.revature.services.UserService;
 import com.revature.util.HibernateUtil;
 
 public class RequestHibernate implements RequestDAO {
 	private static Logger log = LogManager.getLogger(RequestHibernate.class);
+	
 	@Override
 	public Request createOffer(Request r) {
 		// TODO Auto-generated method stub
@@ -33,8 +33,11 @@ public class RequestHibernate implements RequestDAO {
 			int id = (int) s.save(r);
 			r.setRequestId(id);
 			tx.commit();
+			
+			log.info("REQUEST CREATED " + r.toString());
 		} catch (ConstraintViolationException e) {
 			// log it
+			log.error(e);
 		}
 		return r;
 
@@ -162,6 +165,7 @@ public class RequestHibernate implements RequestDAO {
 			
 			
 			tx.commit();
+			log.info("REQUEST UPDATED from " + r.toString() + " to " + r2.toString());
 		}
 		return false;
 	}

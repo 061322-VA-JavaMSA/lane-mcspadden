@@ -4,16 +4,21 @@ let apiUrl = 'http://127.0.0.1:8080/project-one';
 let home = document.getElementById('home');
 let newRequest = document.getElementById('loadRequests');
 let history = document.getElementById('history');
+let profile = document.getElementById('profile')
 
 //Forms
 let subForm = document.getElementById('submissionForm');
 let historyForm = document.getElementById('historyScreen')
+let profileForm = document.getElementById('userprofile')
 
 //Submit Button
 let subButton = document.getElementById('submitButton');
+let subProfileButton = document.getElementById('submitProfile')
 
 //Event Listeners
 newRequest.addEventListener('click', loadSubmissionScreen);
+profile.addEventListener('click', loadProfileScreen)
+subProfileButton.addEventListener('click', submitProfile)
 history.addEventListener('click', loadHistoryScreen);
 history.addEventListener('click', loadHistoryScreen2);
 home.addEventListener('click', goToHome);
@@ -25,19 +30,55 @@ subButton.addEventListener('click', submitRequestForm);
 function loadSubmissionScreen() {
     subForm.setAttribute('style', 'display: true');
     historyForm.setAttribute('style', 'display: none');
+    profileForm.setAttribute('style', 'display: none');
+
 }
 
 function loadHistoryScreen2() {
     historyForm.setAttribute('style', 'display: true');
     subForm.setAttribute('style', 'display: none');
+    profileForm.setAttribute('style', 'display: none');
+
 }
 
 function goToHome() {
     subForm.setAttribute('style', 'display: none');
     historyForm.setAttribute('style', 'display: none');
+    profileForm.setAttribute('style', 'display: none');
 }
 
+function loadProfileScreen() {
+    subForm.setAttribute('style', 'display: none');
+    historyForm.setAttribute('style', 'display: none');
+    profileForm.setAttribute('style', 'display: true');
 
+    let principal =  JSON.parse(sessionStorage.getItem('principal'))
+    document.getElementById('username').value = principal.username;
+    document.getElementById('password').value = principal.password;
+
+
+}
+
+async function submitProfile() {
+    let username = document.getElementById("username")
+    let password = document.getElementById("password")
+    let principal =  JSON.parse(sessionStorage.getItem('principal'))
+    let id = principal.id;
+
+
+    let response = await fetch(`${apiUrl}/update`, {
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams({
+            'username': `${username}`,
+            'password': `${password}`,
+            'id': `${id}`
+        })
+    });
+}
 
 //Servlet Methods
 async function loadHistoryScreen() {

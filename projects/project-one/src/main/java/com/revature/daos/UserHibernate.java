@@ -8,6 +8,8 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -16,6 +18,7 @@ import com.revature.models.User;
 import com.revature.util.HibernateUtil;
 
 public class UserHibernate implements UserDAO {
+	private static Logger log = LogManager.getLogger(UserHibernate.class);
 
 	@Override
 	public User createUser(User u) {
@@ -84,12 +87,14 @@ public class UserHibernate implements UserDAO {
 		try (Session s = HibernateUtil.getSessionFactory().openSession();) {
 			Transaction tx = s.beginTransaction();
 			User u2 = s.load(User.class, u.getId());
-			u2.setEmail(u.getEmail());
+			
 			u2.setPassword(u.getPassword());
 			u2.setUsername(u.getUsername());
 			s.update(u2);
-			System.out.println("Chilling in update");
 			tx.commit();
+			
+			log.info("User UPDATED from " + u.toString() + " to " + u2.toString());
+
 		}
 		return false;
 	}
